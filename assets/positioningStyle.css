@@ -1,0 +1,102 @@
+
+
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.static {
+    position: static;
+    background-color: lightgreen;
+}
+
+.relative {
+    position: relative;
+    top: 50px;
+    left: 200px;
+    background-color: lightcoral;
+}
+
+.absolute {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    background-color: aqua;
+}
+
+.fixed {
+    position: fixed;
+    width: 500px;
+    bottom: 0;
+    background-color: blueviolet;
+    display: none;
+}
+
+div.sticky {
+    position: -webkit-sticky; /* Needed for Safari */
+    position: sticky;
+    top: 0;
+    background-color: green;
+    border: 2px solid #4CAF50;
+  }
+
+  .inlineBlock div {
+    display: inline-block;
+  }
+
+/*=====CSS for Dropdown Menus=====*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #0088ce;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
